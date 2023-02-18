@@ -14,3 +14,7 @@ calculator/build
 # misc
 calculator/.DS_Store
 calculator/npm-debug.log
+
+.terraform
+*.tfstate
+*.backup
