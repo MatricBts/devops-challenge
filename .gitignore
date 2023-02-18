@@ -1,0 +1,16 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+calculator/node_modules
+
+calculator/package-lock.json
+
+# testing
+calculator/coverage
+
+# production
+calculator/build
+
+# misc
+calculator/.DS_Store
+calculator/npm-debug.log
