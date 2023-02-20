@@ -10,7 +10,7 @@
 </ul>
 
 
-<h2>Atualizando o submodulo do projeot calculator </h2>
+<h2>:recycle: Atualizando o submodulo do projeto calculator </h2>
 <li>Devemos inicialmente clonar um projeto de terceiro para o nosso projeto</li>
 
 ```  
@@ -23,7 +23,7 @@ git submodule update
 
 
 <h2>:hammer: Criando build do projeto</h2>
-<li>Entre na pasta calculator e rode os comandos a baixo</li>
+<h3>Entre na pasta calculator e rode os comandos a baixo</h3>
 
 <li>Para instalar dependências do projeto:</li>
     
@@ -37,7 +37,7 @@ npm install
 npm build
 ```  
     
-<h2>Deploy s3</h2>
+<h2>:rocket: Deploy s3</h2>
 <li>Utilizaremos os arquivos terraform para efetuar o deploy</li>
 <li>Antes de tudo você deve fazer o login na sua conta AWS, pode ser fiz aws cli ou preenchendo o provider, ambos você irá precisar da sua Access Key e Secret Key depois entre na pasta IaC e execute os comandos a baixo</li>
 
