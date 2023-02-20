@@ -1,4 +1,4 @@
-<h1> :red_car: Devops Challenger</h1>
+<h1>:repeat: Devops Challenger</h1>
 
 
 <h2>:computer: Tecnologias Utilizadas<h2>
