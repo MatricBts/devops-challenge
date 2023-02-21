@@ -1,5 +1,6 @@
 <h1>:repeat: Devops Challenger</h1>
 
+<h2>Projeto que efetua o deploy de uma aplicação de calculadora no S3 da AWS utilizando terraform como IaC.</h2>
 
 <h2>:computer: Tecnologias Utilizadas<h2>
 <ul>
@@ -55,5 +56,3 @@ terraform init
 terraform apply --auto-approve
 ``` 
 
-
-teste
