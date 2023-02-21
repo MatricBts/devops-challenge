@@ -1,24 +1,14 @@
 resource "aws_s3_bucket" "b" {
   bucket = var.bucket_name
+  acl    = "public-read"
 
   website {
-    index_document = "index.html"
-    error_document = "index.html"
-
-    routing_rules = <<EOF
-      [{
-          "Condition": {
-              "KeyPrefixEquals": "docs/"
-          },
-          "Redirect": {
-              "ReplaceKeyPrefixWith": "documents/"
-          }
-      }]
-      EOF
+    index_document = "index.html"  
   }
 }
 
 resource "aws_s3_bucket_object" "object" {
+  acl    = "public-read"
   for_each = fileset("../calculator/build/", "**")
   bucket = aws_s3_bucket.b.id
   key    = each.value
@@ -38,7 +28,7 @@ resource "aws_s3_bucket_policy" "b" {
                 "Sid": "PublicReadGetObject",
                 "Effect": "Allow",
                 "Principal": "*",
-                "Action": "s3:GetObject",
+                "Action": ["s3:GetObject", "s3:PutObject"],
                 "Resource": "arn:aws:s3:::devops-challenger-calculator-matric/*"
             }
         ]
